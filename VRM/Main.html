@@ -101,36 +101,36 @@
       }
       #resetPose {
         border: none;
-        background: url("reset.png") no-repeat;
+        background: url("appIcons/reset.png") no-repeat;
         background-size: contain;
       }
       #undoPose {
         border: none;
-        background: url("undo.png") no-repeat;
+        background: url("appIcons/undo.png") no-repeat;
         background-size: contain;
         left: calc(50% - 40px);
       }
       #redoPose {
         border: none;
-        background: url("redo.png") no-repeat;
+        background: url("appIcons/redo.png") no-repeat;
         background-size: contain;
         left: calc(50% + 40px);
       }
       #closePostModeButton {
         border: none;
-        background: url("closePostMode.png") no-repeat;
+        background: url("appIcons/closePostMode.png") no-repeat;
         background-size: contain;
         left: calc(50% - 40px);
       }
       #cameraButton {
         border: none;
-        background: url("camera.png") no-repeat;
+        background: url("appIcons/camera.png") no-repeat;
         background-size: contain;
         left: calc(50% + 40px);
       }
       #humanGreen {
         border: none;
-        background: url("humanGreen.png") no-repeat;
+        background: url("appIcons/humanGreen.png") no-repeat;
         background-size: contain;
         position: fixed;
         right: 0;
@@ -141,7 +141,7 @@
       }
       #humanBlue {
         border: none;
-        background: url("humanBlue.png") no-repeat;
+        background: url("appIcons/humanBlue.png") no-repeat;
         background-size: contain;
         position: fixed;
         right: 0;
@@ -152,7 +152,7 @@
       }
       #angleCamera {
         border: none;
-        background: url("angleCamera.png") no-repeat;
+        background: url("appIcons/angleCamera.png") no-repeat;
         background-size: contain;
         position: fixed;
         right: 26px;
@@ -163,7 +163,7 @@
       }
       #angleCameraLock {
         border: none;
-        background: url("angleCameraLock.png") no-repeat;
+        background: url("appIcons/angleCameraLock.png") no-repeat;
         background-size: contain;
         position: fixed;
         right: 26px;
@@ -524,6 +524,23 @@
         <div class="dropdown" id="readActionArea">
           <div class="select">
             <span><i class="far fa-folder"></i></span>
+            <i class="non-italic" id="readAction">アドオン</i>
+          </div>
+          <ul class="dropdown-menu">
+            <li id="authButton">VRoid Hub</li>
+            <li id="preSetPoseButton">プリセットポーズ</li>
+            <li id="triggerInputVRM">VRMファイル</li>
+            <li id="triggerInputPose">ポーズファイル</li>
+            <li id="triggerInputVRMAnimation">VRMAファイル</li>
+            <li id="inputDefaultVRM1">サンプル1</li>
+            <li id="inputDefaultVRM2">サンプル2</li>
+            <li id="inputDefaultVRM3">サンプル3</li>
+            <li id="inputDefaultVRMAnimation">サンプルアニメ</li>
+          </ul>
+        </div>
+        <div class="dropdown" id="readActionArea">
+          <div class="select">
+            <span><i class="far fa-folder"></i></span>
             <i class="non-italic" id="readAction">読み込み</i>
           </div>
           <ul class="dropdown-menu">
@@ -547,7 +564,7 @@
           <ul class="dropdown-menu">
             <li id="savePose">ポーズ保存</li>
             <li id="printScreenShot">画面撮影</li>
-            <!-- <li id="postPose">ポーズ投稿</li> -->
+            <li id="postPose">ポーズ投稿</li>
             <li id="outputVRMA">VRMA出力</li>
           </ul>
         </div>
